@@ -13,3 +13,5 @@ The OpenICU concept base works as a single source of truth for the concepts used
   - [eICU SchemaSpy](https://mit-lcp.github.io/eicu-schema-spy/)
 - MIMIC-IV
   - [MIMIC Documentation](https://mimic.mit.edu/docs/)
+  - Notes:
+    - in mimic, laboratory values should be drawn from `mimiciv_hosp.labevents`
