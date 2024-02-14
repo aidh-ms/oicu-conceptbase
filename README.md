@@ -5,6 +5,7 @@ The OpenICU concept base works as a single source of truth for the concepts used
 ## Tools
 
 - [Athena: Search for codes here](https://athena.ohdsi.org/search-terms/start)
+- [SNOMED Browser](https://browser.ihtsdotools.org)
 
 ## Data Sources
 
