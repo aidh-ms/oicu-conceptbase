@@ -24,4 +24,4 @@ The OpenICU concept base works as a single source of truth for the concepts used
 - we're using pascal case for naming concepts, e.g. `HeartRate`
 - specifications for concepts should be postfixed with an underscore, e.g. `WBC_Relative` and `WBC_Absolute`
 - data sources should be postfixed at the end, e.g. `WBC_Relative_Serum`
-  - Whole Blood: WB 
+  - Whole Blood: WB
