@@ -15,7 +15,7 @@ concept:
     ohdsi: AbstractOHDSISinkSchema
   mapper:
     - mimic: 
-        class: MimicChartEventsMapper
+        class: AbstractMimicEventsMapper
         source: mimic
         params:
           mimic_schema: mimiciv_icu
