@@ -17,9 +17,9 @@ concept:
     - mimic: 
         class: MimicChartEventsMapper
         source: mimic
-        schema: mimiciv_icu
-        table: chartevents
         params:
+          mimic_schema: mimiciv_icu
+          mimic_table: chartevents
           item_ids: [220045,]
 
 
