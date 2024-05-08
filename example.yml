@@ -15,8 +15,8 @@ mapper: # mapping on where and how to find the variable in public databases
       item_ids: ["220045",]
       schema: mimiciv_icu
       table: chartevents
-    fields:
-      item_id: item_id
-      subject_id: subject_id
-      stay_id: stay_id
-      value: valuenum
+      fields:
+        item_id: item_id
+        subject_id: subject_id
+        stay_id: stay_id
+        value: valuenum
