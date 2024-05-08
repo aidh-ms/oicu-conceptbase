@@ -8,18 +8,15 @@ identificators: # collection of identificators, more can be added
   loinc: "8867-4" # loinc identifications CODE
 schema: FHIRObservation # available export schemas
 mapper: # mapping on where and how to find the variable in public databases
-  - mimic: 
-      class: AbstractMimicEventsMapper
-      source: mimic
-      units: bpm # units used in the database 
-      params:
-        item_ids: ["220045",]
-        schema: mimiciv_icu
-        table: chartevents
-      fields:
-        item_id: item_id
-        subject_id: subject_id
-        stay_id: stay_id
-        value: valuenum
-        
-
+  - class: AbstractMimicEventsMapper
+    source: mimic
+    units: bpm # units used in the database 
+    params:
+      item_ids: ["220045",]
+      schema: mimiciv_icu
+      table: chartevents
+    fields:
+      item_id: item_id
+      subject_id: subject_id
+      stay_id: stay_id
+      value: valuenum
