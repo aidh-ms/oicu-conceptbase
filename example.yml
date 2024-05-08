@@ -3,14 +3,14 @@ description: Heart rate is the speed of the heartbeat measured by the number of 
 unit: bpm # unit that should be used for this item
 upper_limit: 300 # upper limit
 lower_limit: 0 # lower limit
-identificators: # collection of identificators, more can be added
+identifiers: # collection of identifiers, more can be added
   snomed: "364075005"  # snomed identifications ID
   loinc: "8867-4" # loinc identifications CODE
 schema: FHIRObservation # available export schemas
 mapper: # mapping on where and how to find the variable in public databases
-  - class: EventsExtractor # class that is used for extraction
+  - klass: EventsExtractor # class that is used for extraction
     source: mimic
-    units: bpm # units used in the database 
+    unit: bpm # unit used in the database 
     params:
       item_ids: ["220045",]
       schema: mimiciv_icu
