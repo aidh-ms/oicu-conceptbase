@@ -1,23 +1,25 @@
-concept:
-  name: HeartRate # naming according to our naming convention
-  category: Observation
-  description: Heart rate is the speed of the heartbeat measured by the number of contractions of the heart per minute (bpm). # human understandable description of the item
-  unit: bpm # unit that should be used for this item
-  identificators: # collection of identificators, more can be added
-    snomed: # snomed identifications
-      id: 364075005 
-      fsn: "364075005 |Heart rate (observable entity)|" 
-    loinc: # loinc identifications
-      id: "Heart rate"
-      code: "8867-4"
-  schema: # available export schemas
-    fhir: FHIRObservation
-    ohdsi: AbstractOHDSISinkSchema
-  mapper: # mapping on where and how to find the variable in public databases
-    - mimic: 
-        class: AbstractMimicEventsMapper
-        source: mimic
-        params:
-          item_ids: ["220045",]
-          schema: mimiciv_icu
-          table: chartevents
+name: HeartRate # naming according to our naming convention
+description: Heart rate is the speed of the heartbeat measured by the number of contractions of the heart per minute (bpm). # human understandable description of the item
+unit: bpm # unit that should be used for this item
+upper_limit: 300 # upper limit
+lower_limit: 0 # lower limit
+identificators: # collection of identificators, more can be added
+  snomed: "364075005"  # snomed identifications ID
+  loinc: "8867-4" # loinc identifications CODE
+schema: FHIRObservation # available export schemas
+mapper: # mapping on where and how to find the variable in public databases
+  - mimic: 
+      class: AbstractMimicEventsMapper
+      source: mimic
+      units: bpm # units used in the database 
+      params:
+        item_ids: ["220045",]
+        schema: mimiciv_icu
+        table: chartevents
+      fields:
+        item_id: item_id
+        subject_id: subject_id
+        stay_id: stay_id
+        value: valuenum
+        
+
