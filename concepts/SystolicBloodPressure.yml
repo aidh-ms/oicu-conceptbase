@@ -8,14 +8,10 @@ identifiers:
   loinc: "8480-6"
 schema: FHIRObservation
 mapper:
+  - klass: AbstractMimicEventsMapper
     source: mimic
     unit: mmHg
     params:
       item_ids: ["220050", "220179"]
       schema: mimiciv_icu
       table: chartevents
-      fields:
-        item_id: item_id
-        subject_id: subject_id
-        stay_id: stay_id
-        value: valuenum
