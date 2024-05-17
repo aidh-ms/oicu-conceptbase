@@ -12,7 +12,6 @@ mapper: # mapping on where and how to find the variable in public databases
     source: mimic
     unit: bpm # unit used in the database 
     params:
-      item_ids: ["220045",]
       schema: mimiciv_icu
       table: chartevents
       fields:
@@ -20,3 +19,7 @@ mapper: # mapping on where and how to find the variable in public databases
         subject_id: subject_id
         stay_id: stay_id
         value: valuenum
+      constraints:
+        itemid: "220045"
+
+      
