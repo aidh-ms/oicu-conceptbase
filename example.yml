@@ -21,5 +21,3 @@ mapper: # mapping on where and how to find the variable in public databases
         value: valuenum
       constraints:
         itemid: "220045"
-
-      
