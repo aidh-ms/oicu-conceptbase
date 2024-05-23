@@ -8,11 +8,11 @@ identifiers:
   loinc: "8867-4"
 schema: FHIRObservation
 mapper:
-  - klass: AbstractMimicEventsMapper
+  - klass: MimicObervationMapper
     source: mimic
     unit: bpm
     params:
-      item_ids: ["220045",]
       schema: mimiciv_icu
       table: chartevents
-      
+      constraints:
+        itemid: "220045"
