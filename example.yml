@@ -8,7 +8,7 @@ identifiers: # collection of identifiers, more can be added
   loinc: "8867-4" # loinc identifications CODE
 schema: FHIRObservation # available export schemas
 mapper: # mapping on where and how to find the variable in public databases
-  - klass: EventsExtractor # class that is used for extraction
+  - klass: ObervationMapper # class that is used for extraction
     source: mimic
     unit: bpm # unit used in the database 
     params:

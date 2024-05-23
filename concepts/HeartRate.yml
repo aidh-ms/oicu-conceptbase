@@ -8,7 +8,7 @@ identifiers:
   loinc: "8867-4"
 schema: FHIRObservation
 mapper:
-  - klass: ObervationMapper
+  - klass: MimicObervationMapper
     source: mimic
     unit: bpm
     params:
