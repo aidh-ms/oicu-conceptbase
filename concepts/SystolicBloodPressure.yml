@@ -12,6 +12,7 @@ mapper:
     source: mimic
     unit: mmHg
     params:
-      item_ids: ["220050", "220179"]
       schema: mimiciv_icu
       table: chartevents
+      constraints:
+        itemid: ["220050", "220179"]
