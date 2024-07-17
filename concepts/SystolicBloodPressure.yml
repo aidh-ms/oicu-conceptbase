@@ -8,7 +8,7 @@ identifiers:
   loinc: "8480-6"
 schema: FHIRObservation
 mapper:
-  - klass: AbstractMimicEventsMapper
+  - klass: MimicObservationMapper
     source: mimic
     unit: mmHg
     params:
