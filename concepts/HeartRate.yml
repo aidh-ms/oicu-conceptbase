@@ -6,7 +6,7 @@ lower_limit: 0
 identifiers: 
   snomed: "364075005"
   loinc: "8867-4"
-schema: FHIRObservation
+#schema: FHIRObservation
 mapper:
   - klass: MimicObservationMapper
     source: mimic

@@ -32,5 +32,6 @@ class ConceptConfig(BaseModel):
     description: str
     identifiers: dict[ConceptCoding, str]
     unit: str
-    schema: str
+    # TODO - We either need the schema attribute, or the klass attribute but not both
+    # schema: str
     mapper: list[MapperConfig]
