@@ -1,0 +1,17 @@
+description: ''
+identifiers:
+  loinc: ''
+  snomed: ''
+lower_limit: 0
+mapper:
+- klass: MimicObservationMapper
+  params:
+    constraints:
+      itemid: '221289'
+    schema: mimiciv_icu
+    table: inputevents
+  source: mimiciv
+  unit: ''
+name: Adrenaline_dosage
+unit: ug/kg/min
+upper_limit: 300

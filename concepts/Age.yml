@@ -1,0 +1,17 @@
+description: Patient's age
+identifiers:
+  loinc: ''
+  snomed: ''
+lower_limit: 0
+mapper:
+- klass: MimicObservationMapper
+  params:
+    constraints:
+      itemid: ''
+    schema: mimiciv_derived
+    table: age
+  source: mimiciv
+  unit: ''
+name: Age
+unit: years
+upper_limit: 300

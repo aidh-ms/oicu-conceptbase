@@ -1,0 +1,17 @@
+description: Patient's gender
+identifiers:
+  loinc: ''
+  snomed: ''
+lower_limit: 0
+mapper:
+- klass: MimicObservationMapper
+  params:
+    constraints:
+      itemid: '226228'
+    schema: mimiciv_icu
+    table: chartevents
+  source: mimiciv
+  unit: ''
+name: Gender
+unit: ''
+upper_limit: 300

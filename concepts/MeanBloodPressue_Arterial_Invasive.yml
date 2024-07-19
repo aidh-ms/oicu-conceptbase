@@ -1,0 +1,17 @@
+description: Mean arterial pressure of a patient
+identifiers:
+  loinc: ''
+  snomed: '251075007'
+lower_limit: 0
+mapper:
+- klass: MimicObservationMapper
+  params:
+    constraints:
+      itemid: '220052'
+    schema: mimiciv_icu
+    table: chartevents
+  source: mimiciv
+  unit: ''
+name: MeanBloodPressue_Arterial_Invasive
+unit: mmHg
+upper_limit: 300
