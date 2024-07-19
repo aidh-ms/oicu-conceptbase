@@ -2,7 +2,7 @@ description: ''
 identifiers:
   loinc: ''
   snomed: ''
-lower_limit: 0
+lower_limit: '0'
 mapper:
 - klass: MimicObservationMapper
   params:
@@ -14,4 +14,4 @@ mapper:
   unit: ''
 name: Creatinine_absolute_serum
 unit: mg/dl
-upper_limit: 300
+upper_limit: '1000000'

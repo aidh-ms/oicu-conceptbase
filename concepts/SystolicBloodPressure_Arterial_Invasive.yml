@@ -2,7 +2,7 @@ description: Systolic arterial pressure of a patient
 identifiers:
   loinc: 76215-3
   snomed: '251071003'
-lower_limit: 0
+lower_limit: '0'
 mapper:
 - klass: MimicObservationMapper
   params:
@@ -11,7 +11,7 @@ mapper:
     schema: mimiciv_icu
     table: chartevents
   source: mimiciv
-  unit: ''
+  unit: mmHg
 name: SystolicBloodPressure_Arterial_Invasive
 unit: mmHg
-upper_limit: 300
+upper_limit: '300'

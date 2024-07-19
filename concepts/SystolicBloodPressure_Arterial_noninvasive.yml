@@ -1,8 +1,8 @@
-description: Systolic venous pressure of a patient
+description: Systolic arterial pressure of a patient
 identifiers:
   loinc: ''
   snomed: '251070002'
-lower_limit: 0
+lower_limit: '0'
 mapper:
 - klass: MimicObservationMapper
   params:
@@ -11,7 +11,7 @@ mapper:
     schema: mimiciv_icu
     table: chartevents
   source: mimiciv
-  unit: ''
+  unit: mmHg
 name: SystolicBloodPressure_Arterial_noninvasive
 unit: mmHg
-upper_limit: 300
+upper_limit: '200'

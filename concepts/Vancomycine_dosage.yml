@@ -2,7 +2,7 @@ description: ''
 identifiers:
   loinc: ''
   snomed: ''
-lower_limit: 0
+lower_limit: ''
 mapper:
 - klass: MimicObservationMapper
   params:
@@ -11,7 +11,7 @@ mapper:
     schema: mimiciv_icu
     table: inputevents
   source: mimiciv
-  unit: ''
+  unit: mg
 name: Vancomycine_dosage
 unit: mg
-upper_limit: 300
+upper_limit: ''

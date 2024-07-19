@@ -2,7 +2,7 @@ description: Height of a patient's body
 identifiers:
   loinc: 8302-2
   snomed: '1153637007'
-lower_limit: 0
+lower_limit: '0'
 mapper:
 - klass: MimicObservationMapper
   params:
@@ -11,7 +11,7 @@ mapper:
     schema: mimiciv_icu
     table: chartevents
   source: mimiciv
-  unit: ''
+  unit: cm
 name: BodyHeight
 unit: cm
-upper_limit: 300
+upper_limit: '300'

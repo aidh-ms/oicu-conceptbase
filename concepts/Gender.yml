@@ -2,7 +2,7 @@ description: Patient's gender
 identifiers:
   loinc: ''
   snomed: ''
-lower_limit: 0
+lower_limit: ''
 mapper:
 - klass: MimicObservationMapper
   params:
@@ -14,4 +14,4 @@ mapper:
   unit: ''
 name: Gender
 unit: ''
-upper_limit: 300
+upper_limit: ''

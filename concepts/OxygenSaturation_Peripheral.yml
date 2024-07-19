@@ -2,7 +2,7 @@ description: Oxygen Saturation, irrespective of sample site
 identifiers:
   loinc: ''
   snomed: ''
-lower_limit: 0
+lower_limit: '0'
 mapper:
 - klass: MimicObservationMapper
   params:
@@ -11,7 +11,7 @@ mapper:
     schema: mimiciv_icu
     table: chartevents
   source: mimiciv
-  unit: ''
+  unit: '%'
 name: OxygenSaturation_Peripheral
 unit: '%'
-upper_limit: 300
+upper_limit: '100'
