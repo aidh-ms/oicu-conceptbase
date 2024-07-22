@@ -11,7 +11,7 @@ mapper:
     schema: mimiciv_icu
     table: chartevents
   source: mimiciv
-  unit: cm H2O
+  unit: cmH2O
 name: PEEP
-unit: cm H2O
+unit: cmH2O
 upper_limit: '40'
