@@ -9,7 +9,7 @@ identifiers:
 schema: FHIRObservation
 mapper:
   - klass: MimicObservationMapper
-    source: mimic
+    source: mimiciv
     unit: mmHg
     params:
       schema: mimiciv_icu

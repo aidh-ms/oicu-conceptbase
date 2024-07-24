@@ -1,0 +1,17 @@
+description: Weight of a patien's body
+identifiers:
+  loinc: 29463-7
+  snomed: '27113001'
+lower_limit: '0'
+mapper:
+- klass: MimicObservationMapper
+  params:
+    constraints:
+      itemid: '224639'
+    schema: mimiciv_icu
+    table: chartevents
+  source: mimiciv
+  unit: kg
+name: BodyWeight
+unit: kg
+upper_limit: '500'
