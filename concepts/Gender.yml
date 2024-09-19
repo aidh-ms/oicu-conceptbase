@@ -12,6 +12,14 @@ mapper:
     table: chartevents
   source: mimiciv
   unit: ''
+- klass: EICUPationObservationMapper
+  params:
+    fields:
+      value: gender
+    schema: eicu_crd
+    table: patient
+  source: eicu
+  unit: ''
 name: Gender
 unit: ''
 upper_limit: ''
