@@ -12,6 +12,14 @@ mapper:
     table: chartevents
   source: mimiciv
   unit: kg
+- klass: EICUPationObservationMapper
+  params:
+    fields:
+      value: admissionWeight
+    schema: eicu_crd
+    table: patient
+  source: eicu
+  unit: cm
 name: BodyWeight
 unit: kg
 upper_limit: '500'
