@@ -6,10 +6,14 @@ lower_limit: '0'
 mapper:
 - klass: MimicObservationMapper
   params:
-    constraints:
-      itemid: ''
+    constraints: {}
     schema: mimiciv_derived
-    table: urineoutput
+    table: urine_output
+    fields:
+      value: urineoutput
+    joins:
+      mimiciv_icu.icustays:
+        mimiciv_icu.icustays.stay_id: mimiciv_derived.urine_output.stay_id
   source: mimiciv
   unit: ml
 name: UrineVolume
