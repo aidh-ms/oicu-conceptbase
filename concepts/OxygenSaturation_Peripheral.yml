@@ -12,6 +12,14 @@ mapper:
     table: chartevents
   source: mimiciv
   unit: '%'
+- klass: EICUObservationMapper
+  params:
+    fields:
+      value: sao2
+    schema: eicu_crd
+    table: vitalperiodic
+  source: eicu
+  unit: '%'
 name: OxygenSaturation_Peripheral
 unit: '%'
 upper_limit: '100'

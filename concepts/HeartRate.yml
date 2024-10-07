@@ -12,6 +12,14 @@ mapper:
     table: chartevents
   source: mimiciv
   unit: bpm
+- klass: EICUObservationMapper
+  params:
+    fields:
+      value: heartrate
+    schema: eicu_crd
+    table: vitalperiodic
+  source: eicu
+  unit: bpm
 name: HeartRate
 unit: bpm
 upper_limit: '300'

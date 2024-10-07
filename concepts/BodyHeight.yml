@@ -12,6 +12,14 @@ mapper:
     table: chartevents
   source: mimiciv
   unit: cm
+- klass: EICUPationObservationMapper
+  params:
+    fields:
+      value: admissionheight
+    schema: eicu_crd
+    table: patient
+  source: eicu
+  unit: cm
 name: BodyHeight
 unit: cm
 upper_limit: '300'

@@ -8,10 +8,10 @@ mapper:
   params:
     constraints:
       itemid: '220615'
-    schema: mimic_hosp
-    table: labevents
+    schema: mimiciv_icu
+    table: chartevents
   source: mimiciv
-  unit: ''
+  unit: 'mg/dl'
 name: Creatinine_absolute_serum
 unit: mg/dl
 upper_limit: '1000000'
