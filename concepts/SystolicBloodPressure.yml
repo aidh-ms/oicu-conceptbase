@@ -8,11 +8,27 @@ identifiers:
   loinc: "8480-6"
 schema: FHIRObservation
 mapper:
-  - klass: MimicObservationMapper
-    source: mimic
-    unit: mmHg
-    params:
-      schema: mimiciv_icu
-      table: chartevents
-      constraints:
-        itemid: ["220050", "220179"]
+- klass: MimicObservationMapper
+  source: mimiciv
+  unit: mmHg
+  params:
+    schema: mimiciv_icu
+    table: chartevents
+    constraints:
+      itemid: ["220050", "220179"]
+- klass: EICUObservationMapper
+  params:
+    fields:
+      value: systemicsystolic
+    schema: eicu_crd
+    table: vitalperiodic
+  source: eicu
+  unit: mmHg
+- klass: EICUObservationMapper
+  params:
+    fields:
+      value: noninvasivesystolic
+    schema: eicu_crd
+    table: vitalaperiodic
+  source: eicu
+  unit: mmHg

@@ -1,25 +1,25 @@
-description: heart rate of a patient, source agnostic
+description: Actual breathing rate of patient
 identifiers:
-  loinc: 8867-4
-  snomed: '364075005'
+  loinc: ''
+  snomed: ''
 lower_limit: '0'
 mapper:
 - klass: MimicObservationMapper
   params:
     constraints:
-      itemid: '220045'
+      itemid: '224690'
     schema: mimiciv_icu
     table: chartevents
   source: mimiciv
-  unit: bpm
+  unit: 1/min
 - klass: EICUObservationMapper
   params:
     fields:
-      value: heartrate
+      value: respiration
     schema: eicu_crd
     table: vitalperiodic
   source: eicu
-  unit: bpm
-name: HeartRate
-unit: bpm
-upper_limit: '300'
+  unit: 1/min
+name: BreathingRate
+unit: 1/min
+upper_limit: '100'
