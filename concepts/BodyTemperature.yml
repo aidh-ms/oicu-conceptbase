@@ -12,6 +12,14 @@ mapper:
     table: chartevents
   source: mimiciv
   unit: °C
+- klass: EICUObservationMapper
+  params:
+    fields:
+      value: temperature
+    schema: eicu_crd
+    table: vitalperiodic
+  source: eicu
+  unit: °C
 name: BodyTemperature
 unit: °C
 upper_limit: '45'
